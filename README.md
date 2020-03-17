@@ -8,7 +8,7 @@ A coding assignment by Synthesis, in which a system	 is designed to	create libra
 <li>Create Librarian, View All Librarian and Delete Librarian</li>
 <li>Issue Books to Students</li>
 <li>View All issued books</li>
-<li>Return Book</li>
+<li>Return Books from User</li>
 </ul>
 
 <h3>Requirements</h3>
@@ -44,8 +44,8 @@ Following technologies, tools and frameworks are used to develop a system with e
 <h3>In memory database</h3>
 H2 Database is used for storing and retrieving data saved and fetched from various endpoints.
 When application is up, following URL <b><i>http://localhost:8080/h2-console</i></b> gives a view of database layout.<br>
-Schema name : telna
-Tables : User, Usage
+Schema name : synthesis
+Tables : User, Book, Issue
 
 
 <h3>Test cases</h3>
@@ -54,14 +54,6 @@ Tables : User, Usage
   <li>Unit test cases</li>
   <li>Controller test cases</li>
   <li>Integration test cases</li>
-</ul>
-
-<h3>Running test cases and checking coverage</h3>
-<ul>
-<li>Run following command to run unit and integration test cases <b> ./mvnw clean test</b></li>
-<li>Run following command to generate test coverage in html format <b> ./mvnw clean test</b></li>
-<li>Run following command to create docker image <b>docker build -t telna/telnaApp .</b></li>
-<li>Run following command to run docker image <b>docker run -p 8080:8080 telna/telnaApp</b></li>
 </ul>
 
 <h3>Packaging</h3>
