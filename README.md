@@ -1,4 +1,4 @@
-<h2>Library Management System - Java + Springboot + JPA + H2 database + Spring Security + Junit 5</h2>
+<h2>Library Management System - Java + Springboot + JPA + H2 database + Spring Security + Junit 5 Mockito</h2>
 
 A coding assignment by Synthesis, in which a system	 is designed to	create librarian and issue books to the student.
 <br>A Java application using SpringBoot framework is created to perform following functionalities :
@@ -43,7 +43,8 @@ Following technologies, tools and frameworks are used to develop a system with e
 <li>Unit Testing: Junit 5, Mockito</li>
 <li>Integration Testing: Spring Test</li>
 <li>Coverage Tool: Jacoco</li>
- <li>Security: Spring Boot Security</li>
+<li>Security: Spring Boot Security</li>
+<li>Rest Client: Postman</li>
 </ul>
 
 <h3>In memory database</h3>
@@ -74,8 +75,8 @@ Tables : User, Book, Issue
 
 <h3>Spring security</h3>
 <ul>
- Application has following authorized roles for specific reponsibilities
-  <li>ADMIN - Add, Delete and View Librarian</li>
-  <li>LIBRARIAN - Add, View, Issue and Return books to students</li>
+Application has following authorized roles for specific reponsibilities
+<li>ADMIN - Add, Delete and View Librarian</li>
+<li>LIBRARIAN - Add, View, Issue and Return books to students</li>
 </ul>
 
