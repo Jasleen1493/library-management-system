@@ -16,6 +16,10 @@ For building and running the application you would require:<br>
 
 <ul>
 <li>JDK 11</li>
+<li>Java IDE</li>
+<li>Maven</li>
+<li>GIT</li>
+<li>Rest Client (example POSTMAN)</li>
 </ul>
 
 <h3>Running the application</h3>
@@ -39,6 +43,7 @@ Following technologies, tools and frameworks are used to develop a system with e
 <li>Unit Testing: Junit 5, Mockito</li>
 <li>Integration Testing: Spring Test</li>
 <li>Coverage Tool: Jacoco</li>
+ <li>Security: Spring Boot Security</li>
 </ul>
 
 <h3>In memory database</h3>
@@ -62,6 +67,9 @@ Tables : User, Book, Issue
 <li><b>repository</b> — to communicate with the database</li>
 <li><b>service</b> — to hold our business logic</li>
 <li><b>controller</b> — to listen to the client</li>
+<li><b>config</b> — holds configuration used for swagger and spring security</li>
+<li><b>constants</b> — contains constant for application wide usage</li>
+<li><b>exception</b> — to hold custom designed exceptions</li>
 </ul>
 
 <h3>Spring security</h3>
