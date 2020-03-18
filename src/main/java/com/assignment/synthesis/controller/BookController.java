@@ -32,7 +32,7 @@ public class BookController{
 	}
 	
 	@GetMapping("/books")
-	@ApiOperation(value = "Return list of books ")
+	@ApiOperation(value = "Get list of books ")
 	public ResponseEntity<?> view() {
 		return new ResponseEntity<>(bookService.viewBooks(), HttpStatus.OK);
 	}
