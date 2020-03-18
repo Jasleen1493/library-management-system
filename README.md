@@ -1,4 +1,4 @@
-<h2>Library Management System - Java + Springboot + JPA + H2 database</h2>
+<h2>Library Management System - Java + Springboot + JPA + H2 database + Spring Security + Junit 5</h2>
 
 A coding assignment by Synthesis, in which a system	 is designed to	create librarian and issue books to the student.
 <br>A Java application using SpringBoot framework is created to perform following functionalities :
@@ -64,5 +64,10 @@ Tables : User, Book, Issue
 <li><b>controller</b> — to listen to the client</li>
 </ul>
 
-
+<h3>Spring security</h3>
+<ul>
+ Application has following authorized roles for specific reponsibilities
+  <li>ADMIN - Add, Delete and View Librarian</li>
+  <li>LIBRARIAN - Add, View, Issue and Return books to students</li>
+</ul>
 
