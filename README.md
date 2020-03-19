@@ -56,10 +56,16 @@ Tables : User, Book, Issue
 
 <h3>Test cases</h3>
 <ul>
- Application has following test cases
-  <li>Unit test cases</li>
-  <li>Controller test cases</li>
-  <li>Integration test cases</li>
+Application has following test cases
+<li>Unit test cases</li>
+<li>Controller test cases</li>
+<li>Integration test cases</li>
+</ul>
+
+<h3>Running test cases and checking coverage</h3>
+<ul>
+<li>Run following command to run unit and integration test cases <b> ./mvnw clean test</b></li>
+<li>Check generated test coverage report in folder \\LibraryManagementSystem\synthesis\target\jacoco-ut\index.html<b> ./mvnw clean test</b></li>
 </ul>
 
 <h3>Packaging</h3>
