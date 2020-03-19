@@ -65,7 +65,7 @@ Application has following test cases
 <h3>Running test cases and checking coverage</h3>
 <ul>
 <li>Run following command to run unit and integration test cases <b> ./mvnw clean test</b></li>
-<li>Check runtime generated test coverage report in folder \\LibraryManagementSystem\synthesis\target\jacoco-ut\index.html. Also attached already run test report having 100% of test coverage in code structure as index.html <b> ./mvnw clean test</b></li>
+<li>Check runtime generated test coverage report in folder \\LibraryManagementSystem\synthesis\target\jacoco-ut\index.html. Also attached already run test report having 100% of test coverage in code structure as <b>index.html </b></li>
 </ul>
 
 <h3>Packaging</h3>
