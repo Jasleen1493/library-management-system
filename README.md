@@ -1,4 +1,4 @@
-<h2>Library Management System - Java + Springboot + JPA + H2 database + Spring Security + Junit 5 Mockito</h2>
+<h2>Library Management System - Java + Springboot + JPA + H2 database + Spring Security + Junit 5 Mockito + Jacoco</h2>
 
 A coding assignment by Synthesis, in which a system	 is designed to	create librarian and issue books to the student.
 <br>A Java application using SpringBoot framework is created to perform following functionalities :
