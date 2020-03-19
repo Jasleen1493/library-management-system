@@ -1,5 +1,6 @@
 package com.assignment.synthesis.service;
 
+import com.assignment.synthesis.constants.Constants;
 import com.assignment.synthesis.entity.User;
 import com.assignment.synthesis.exception.UserNotFoundException;
 import com.assignment.synthesis.repository.UserRepository;
@@ -16,7 +17,7 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	
-	public User saveUser(User user) {
+	public User addUser(User user) {
 		return userRepository.save(user);
 	}
 	
@@ -28,9 +29,10 @@ public class UserService {
 		return userRepository.findAll();
 	}
 	
-	public void deleteUser(Long userId) throws UserNotFoundException {
+	public String deleteUser(Long userId) throws UserNotFoundException {
 		Optional.of(userRepository.findById(userId).orElseThrow(() -> new UserNotFoundException(userId))).ifPresent(
 				u -> userRepository.deleteById(userId));
+		return Constants.DELETE_USER_MESSAGE;
 	}
 
 	@Transactional

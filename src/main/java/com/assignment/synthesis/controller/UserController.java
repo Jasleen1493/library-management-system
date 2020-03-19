@@ -1,5 +1,6 @@
 package com.assignment.synthesis.controller;
 
+import com.assignment.synthesis.constants.Constants;
 import com.assignment.synthesis.entity.User;
 import com.assignment.synthesis.exception.UserNotFoundException;
 import com.assignment.synthesis.service.UserService;
@@ -23,7 +24,7 @@ public class UserController {
 	@PostMapping("/user")
 	@ApiOperation(value = "Return user")
 	public ResponseEntity<?> add(@Valid @RequestBody User user) {
-		return new ResponseEntity<>(userService.saveUser(user), HttpStatus.OK);
+		return new ResponseEntity<>(userService.addUser(user), HttpStatus.OK);
 	}
 	
 	@PostMapping("/users")
@@ -41,8 +42,7 @@ public class UserController {
 	@DeleteMapping("/user/{userId}")
 	@ApiOperation(value = "Delete user")
 	public ResponseEntity<?> delete(@PathVariable Long userId) throws UserNotFoundException {
-		userService.deleteUser(userId);
-		return new ResponseEntity<>("User deleted successfully", HttpStatus.OK);
+		return new ResponseEntity<>(userService.deleteUser(userId), HttpStatus.OK);
 	}
 	
 }

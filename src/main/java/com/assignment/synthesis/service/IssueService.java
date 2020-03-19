@@ -35,7 +35,7 @@ public class IssueService {
         return Constants.ISSUE_SAVED_MESSAGE;
 	}
 
-    public List<Issue> findByUser(Long userId){
+    public List<Issue> findIssueByUser(Long userId){
 	    User user = userService.getUser(userId);
 	    return issueRepository.findByUserAndReturnDateIsNull(user);
     }

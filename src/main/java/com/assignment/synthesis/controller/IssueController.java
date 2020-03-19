@@ -3,7 +3,6 @@ package com.assignment.synthesis.controller;
 
 import com.assignment.synthesis.entity.Book;
 import com.assignment.synthesis.entity.Issue;
-import com.assignment.synthesis.entity.User;
 import com.assignment.synthesis.service.IssueService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +35,7 @@ public class IssueController {
 	@GetMapping("/issues/{userId}")
 	@ApiOperation(value = "view issued books to user")
 	public List<Issue> view(@PathVariable Long userId){
-		return issueService.findByUser(userId);
+		return issueService.findIssueByUser(userId);
 	}
 
     @PostMapping("/return/books/{userId}")

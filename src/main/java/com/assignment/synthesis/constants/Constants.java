@@ -12,4 +12,6 @@ public interface Constants {
 	
 	String ISSUE_SAVED_MESSAGE = "Issue saved succesfully";
 	String RETURN_BOOKS_MESSAGE = "Book returned by user id ";
+	
+	String DELETE_USER_MESSAGE = "User deleted successfully";
 }
