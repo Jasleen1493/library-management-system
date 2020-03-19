@@ -5,7 +5,7 @@ A coding assignment by Synthesis, in which a system	 is designed to	create libra
 <ul>
 <li>Save Book and List of Books</li>
 <li>View All Books</li>
-<li>Create Librarian, View All Librarian and Delete Librarian</li>
+<li>Create Librarian, View All Librarians and Delete Librarian</li>
 <li>Issue Books to Students</li>
 <li>View All issued books</li>
 <li>Return Books from User</li>
