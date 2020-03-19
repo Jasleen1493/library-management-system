@@ -9,7 +9,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.mock.http.client.MockClientHttpRequest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,6 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
@@ -37,7 +35,7 @@ public class UserServiceTest {
 		u.setName("Jasleen");
 		
 		when(userRepository.save(any(User.class))).thenReturn(u);
-		User user = userService.addUser(u);
+		User user = userService.saveUser(u);
 		assertEquals(u.getName(),user.getName());
 	}
 	

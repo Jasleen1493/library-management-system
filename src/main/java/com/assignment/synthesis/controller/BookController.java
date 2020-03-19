@@ -1,7 +1,6 @@
 package com.assignment.synthesis.controller;
 
 import com.assignment.synthesis.entity.Book;
-import com.assignment.synthesis.entity.User;
 import com.assignment.synthesis.service.BookService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +21,13 @@ public class BookController{
 	@PostMapping("/books")
 	@ApiOperation(value = "Save book ")
 	public ResponseEntity<?> save(@RequestBody List<Book> books) {
-		return new ResponseEntity<>(bookService.addBooks(books), HttpStatus.OK);
+		return new ResponseEntity<>(bookService.saveBooks(books), HttpStatus.OK);
 	}
 	
 	@PostMapping("/book")
 	@ApiOperation(value = "Save list of books ")
 	public ResponseEntity<?> save(@RequestBody Book book) {
-		return new ResponseEntity<>(bookService.addBook(book), HttpStatus.OK);
+		return new ResponseEntity<>(bookService.saveBook(book), HttpStatus.OK);
 	}
 	
 	@GetMapping("/books")

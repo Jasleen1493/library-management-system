@@ -13,11 +13,11 @@ public class BookService {
 	@Autowired
 	BookRepository bookRepository;
 	
-	public List<Book> addBooks(List<Book> books) {
+	public List<Book> saveBooks(List<Book> books) {
 		return bookRepository.saveAll(books);
 	}
 	
-	public Book addBook(Book book) {
+	public Book saveBook(Book book) {
 		return bookRepository.save(book);
 	}
 	

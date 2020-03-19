@@ -1,7 +1,6 @@
 package com.assignment.synthesis.service;
 
 import com.assignment.synthesis.entity.Book;
-import com.assignment.synthesis.entity.User;
 import com.assignment.synthesis.repository.BookRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -31,7 +30,7 @@ public class BookServiceTest {
 		book.setName("Java");
 		
 		when(bookRepository.save(any(Book.class))).thenReturn(book);
-		Book actualBook = bookService.addBook(book);
+		Book actualBook = bookService.saveBook(book);
 		assertEquals(book.getName(),actualBook.getName());
 	}
 	
@@ -44,7 +43,7 @@ public class BookServiceTest {
 		books.add(book);
 		
 		when(bookRepository.saveAll(any(List.class))).thenReturn(books);
-		List<Book> bookList = bookService.addBooks(books);
+		List<Book> bookList = bookService.saveBooks(books);
 		assertEquals(books.get(0).getName(),bookList.get(0).getName());
 	}
 	
